@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "759474443637",
+    "firebase_url": "https://frvr-dcbfd.firebaseio.com",
+    "project_id": "frvr-dcbfd",
+    "storage_bucket": "frvr-dcbfd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:759474443637:android:dbe7c12babe63b42",
+        "android_client_info": {
+          "package_name": "com.foreverproducts"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "759474443637-54mp3s5mt86mj4aqd3e5l461p655pcoa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADdvC8Qqso4gZpQ-tSTyGfN-FNqlemXgI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "759474443637-54mp3s5mt86mj4aqd3e5l461p655pcoa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
