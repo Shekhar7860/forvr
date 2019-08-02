@@ -2,6 +2,7 @@ import {Platform, StyleSheet, Text, View, Alert, StatusBar, TouchableOpacity,  I
 import React, { Component } from 'react';
 import { db } from './config';
 import firebase from 'react-native-firebase';
+import { InterstitialAdManager, NativeAdsManager,  BannerView, AdSettings  } from 'react-native-fbads';
 const Banner = firebase.admob.Banner;
 const AdRequest = firebase.admob.AdRequest;
 const advert = firebase.admob().interstitial('ca-app-pub-9784974231819956/7230251085')
