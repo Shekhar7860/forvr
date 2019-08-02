@@ -1,4 +1,4 @@
-import {Platform, StyleSheet, Text, View, StatusBar, TouchableHighlight} from 'react-native';
+import {Platform, StyleSheet, Text, View, Share, TouchableOpacity, Image, StatusBar, TouchableHighlight} from 'react-native';
 
 import React, { Component } from 'react';
 import firebase from 'react-native-firebase';
@@ -39,6 +39,21 @@ export default class Welcome extends Component {
   static navigationOptions = {
     title: "Welcome"
   }
+
+  share = () => {
+    Share.share({
+      message: 'Checkout Forever Living Products - https://play.google.com/store/apps/details?id=com.foreverproducts',
+      url: 'https://play.google.com/store/apps/details?id=com.foreverproducts',
+      title: 'Start Your Own Business'
+    }, {
+      // Android only:
+      dialogTitle: 'Share the app',
+      // iOS only:
+      excludedActivityTypes: [
+        'com.apple.UIKit.activity.PostToTwitter'
+      ]
+    })
+  }
   goToProducts = () => {
       InterstitialAdManager.showAd("665254733991193_665318663984800")
   .then(didClick => {
@@ -57,7 +72,9 @@ export default class Welcome extends Component {
                <View style={styles.toolbar}>
                     <Text style={styles.toolbarButton}></Text>
                     <Text style={styles.toolbarTitle}>Home</Text>
-                    <Text style={styles.toolbarButton}></Text>
+                    <TouchableOpacity style={styles.toolbarButton}onPress={() => this.share()}>
+                    <Image style={{width:30,marginLeft:5,  height:30}}source={require('../images/share.png')}></Image>
+                    </TouchableOpacity>
                 </View>
                 <View style={styles.content}>
                 {/* <BannerView
