@@ -72,7 +72,7 @@ export default class Welcome extends Component {
                <View style={styles.toolbar}>
                     <Text style={styles.toolbarButton}></Text>
                     <Text style={styles.toolbarTitle}>Home</Text>
-                    <TouchableOpacity style={styles.toolbarButton}onPress={() => this.share()}>
+                    <TouchableOpacity style={styles.toolbarButton} onPress={() => this.share()}>
                     <Image style={{width:30,marginLeft:5,  height:30}}source={require('../images/share.png')}></Image>
                     </TouchableOpacity>
                 </View>

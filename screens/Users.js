@@ -227,16 +227,16 @@ export default class Users extends Component {
             }}
           >
             <View style={{flexDirection:'row'}} >
-            <View style={{width:'30%'}}></View>
+            <View style={{width:'20%'}}></View>
          <Text style={styles.email}>Qty : {item.age}</Text>
-         <Text> MRP: {item.DateOfBirth} </Text>
+         <Text> FBO Price: {item.DateOfBirth} </Text>
              <View style={{width:'30%'}}></View>
            </View>
             <View style={{flexDirection:'row'}}>
-           <View style={{width:'30%'}}></View>
-            <Text> DP : {item.DateOfJoining} </Text>
-            <Text> BV : {item.profile} </Text>
-          <View style={{width:'30%'}}></View>
+           <View style={{width:'20%'}}></View>
+            <Text> Novus Customer  Price : {item.DateOfJoining} </Text>
+            <Text> CC : {item.profile} </Text>
+          <View style={{width:'20%'}}></View>
              </View>
             {/* <Text style={{ marginBottom: 10 }}>
               {item.email || 'Read More..'}

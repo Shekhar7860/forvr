@@ -168,9 +168,9 @@ setTimeout(() => {
          <ScrollView>
               <Text style={{marginTop:5}}> Benefits </Text>
           <Text> {this.state.benefits} </Text>
-            <Text style={{marginTop:5}}> MRP Price </Text>
+            <Text style={{marginTop:5}}> Novus Customer  Price </Text>
           <Text> {this.state.mrp} </Text>
-            <Text style={{marginTop:5}}> DP Price </Text>
+            <Text style={{marginTop:5}}> FBO Price </Text>
           <Text> {this.state.dp} </Text>
          
           </ScrollView>
