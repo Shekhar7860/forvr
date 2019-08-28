@@ -8,7 +8,7 @@ import firebase from 'react-native-firebase';
 const Banner = firebase.admob.Banner;
 const AdRequest = firebase.admob.AdRequest;
 
-const advert = firebase.admob().interstitial('ca-app-pub-3372831736678620/8773269176')
+const advert = firebase.admob().interstitial('ca-app-pub-3550043356338169/3701376056')
 const request = new AdRequest();
 request.addKeyword('foobar');
 export default class Users extends Component {
@@ -81,13 +81,13 @@ export default class Users extends Component {
   };
   editUser = (val) => {
     AdSettings.addTestDevice(AdSettings.currentDeviceHash);
-      InterstitialAdManager.showAd("434555400602082_435239277200361")
-    .then(didClick => {
-      console.log('working')
-    })
-    .catch(error => {
-      console.log(error, 'rror')
-    });
+    //   InterstitialAdManager.showAd("434555400602082_435239277200361")
+    // .then(didClick => {
+    //   console.log('working')
+    // })
+    // .catch(error => {
+    //   console.log(error, 'rror')
+    // });
        advert.loadAd(request.build());
  
  advert.on('onAdLoaded', () => {
@@ -284,7 +284,7 @@ export default class Users extends Component {
        <Banner
        style={{alignSelf:'center',marginLeft:20}}
     size={"LARGE_BANNER"}
-  unitId={"ca-app-pub-3372831736678620/8850975008"}
+  unitId={"ca-app-pub-3550043356338169/2579866077"}
   request={request.build()}
   onAdLoaded={() => {
     console.log('Advert loaded');

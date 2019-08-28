@@ -5,7 +5,7 @@ import firebase from 'react-native-firebase';
 import { InterstitialAdManager, NativeAdsManager,  BannerView, AdSettings  } from 'react-native-fbads';
 const Banner = firebase.admob.Banner;
 const AdRequest = firebase.admob.AdRequest;
-const advert = firebase.admob().interstitial('ca-app-pub-9784974231819956/7230251085')
+const advert = firebase.admob().interstitial('ca-app-pub-3550043356338169/1075212715')
 const request = new AdRequest();
 request.addKeyword('foobar');
 
@@ -83,14 +83,14 @@ Alert.alert("please fill all details")
 
 
   goBack = () => {
-    AdSettings.addTestDevice(AdSettings.currentDeviceHash);
-    InterstitialAdManager.showAd("434555400602082_435239277200361")
-  .then(didClick => {
-    console.log('working')
-  })
-  .catch(error => {
-    console.log(error, 'rror')
-  });
+  //   AdSettings.addTestDevice(AdSettings.currentDeviceHash);
+  //   InterstitialAdManager.showAd("434555400602082_435239277200361")
+  // .then(didClick => {
+  //   console.log('working')
+  // })
+  // .catch(error => {
+  //   console.log(error, 'rror')
+  // });
     this.props.navigation.navigate('ScreenOne')
   }
 
@@ -153,7 +153,7 @@ setTimeout(() => {
  <Banner
        style={{alignSelf:'center',marginLeft:20, marginTop:10}}
     size={"LARGE_BANNER"}
-  unitId={"ca-app-pub-3372831736678620/6500143836"}
+  unitId={"ca-app-pub-3550043356338169/1908662678"}
   request={request.build()}
   onAdLoaded={() => {
     console.log('Advert loaded');
@@ -222,7 +222,7 @@ const styles = StyleSheet.create({
     fontSize:20                //Step 3
 },
   toolbar:{
-    backgroundColor:'#81c04d',
+    backgroundColor:'#e74c3c',
     paddingBottom:10,
     flexDirection:'row' ,
     paddingTop:20   //Step 1
